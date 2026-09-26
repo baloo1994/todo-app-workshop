@@ -33,11 +33,12 @@ function App() {
       <button type="button" onClick={handleClear}>Rensa</button>
       <button type="button" onClick={handleAdd}>Lägg till</button>
       <p>Kladd just nu: {draft}</p>
+      
       <ul>
-      {todos.map((todo) => (
-<li key={todo}>{todo}</li>
-      ))}
-      </ul>
+  {todos.map((todo) => (
+    <li key={todo}>{todo}</li>
+  ))}
+</ul>
     </main>
   );
 }
